@@ -18,7 +18,7 @@ $font-text: 'Source Sans Pro', sans-serif;
 
 body {
   background-color: #f0f8ff;
-  font-family: $font-text;
+  font-family: 'classico-urw', 'Lato', 'Open sans', Arial, sans-serif;
   color: $color-dark;
   font-weight: 300;
   font-size: 16px;
@@ -34,7 +34,7 @@ body {
 .section-title {
   font-size: 60px;
   text-transform: uppercase;
-  font-family: $font-header;
+  font-family: 'classico-urw', 'Lato', 'Open sans', Arial, sans-serif;
   font-weight: 800;
   color: #dcdcdc;
 
