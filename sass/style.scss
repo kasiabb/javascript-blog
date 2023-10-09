@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
 
 /* Variables */
@@ -11,12 +10,14 @@ $font-text: 'Source Sans Pro', sans-serif;
 
 /* Global */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background: $color-light;
+  background-color: #f0f8ff;
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
@@ -27,13 +28,16 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  background-image: url('https://i.postimg.cc/rw1C85QR/pexels-jane-doan-979310.jpg');
 }
 
 .section-title {
   font-size: 60px;
   text-transform: uppercase;
   font-family: $font-header;
-  font-weight: 600;
+  font-weight: 800;
+  color: #dcdcdc;
+
   span {
     text-transform: none;
     font-weight: 400;
@@ -43,78 +47,78 @@ body {
 /* Layout */
 
 .wrapper {
-    display: flex;
-    margin-left: 10px;
+  display: flex;
+  margin-left: 10px;
+}
+
+.sidebar {
+  flex: 1 0 0;
+}
+
+.posts {
+  flex: 2 0 0;
+}
+
+.sidebar,
+.posts {
+  background: $color-light;
+  margin-right: 10px;
+  padding: 40px;
+  border: 1px solid $color-dark;
+  border-radius: 5px;
+}
+
+/* Logo */
+
+.logo {
+  font-family: $font-logo;
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Lists */
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  .active {
+    font-weight: bold;
   }
-  
-  .sidebar {
-    flex: 1 0 0;
+}
+
+.list-horizontal {
+  li {
+    display: inline-block;
   }
-  
-  .posts {
-    flex: 2 0 0;
+}
+
+/* Authors */
+
+.authors {
+  li {
+    margin-bottom: 12px;
   }
-  
-  .sidebar, .posts {
-    background: $color-light;
-    margin-right: 10px;
-    padding: 40px;
-    border: 1px solid $color-dark;
-    border-radius: 5px;
+}
+
+/* Post */
+
+.post {
+  display: none;
+  &.active {
+    display: block;
   }
-  
-  /* Logo */
-  
-  .logo {
-    font-family: $font-logo;
-    font-weight: 400;
-    font-size: 104px;
-    line-height: 1;
-    text-align: center;
+}
+
+.post-author {
+  font-style: italic;
+}
+
+.post-tags {
+  display: flex;
+  p {
+    margin: 0 10px 0 0;
   }
-  
-  /* Lists */
-  
-  .list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    .active {
-      font-weight: bold;
-    }
-  }
-  
-  .list-horizontal {
-    li {
-      display: inline-block;
-    }
-  }
-  
-  /* Authors */
-  
-  .authors {
-    li {
-      margin-bottom: 12px;
-    }
-  }
-  
-  /* Post */
-  
-  .post {
-    display: none;
-    &.active {
-      display: block;
-    }
-  }
-  
-  .post-author {
-    font-style: italic;
-  }
-  
-  .post-tags {
-    display: flex;
-    p {
-      margin: 0 10px 0 0;
-    }
-  }
-  
+}
