@@ -125,20 +125,34 @@ body {
     margin: 0 10px 0 0;
   }
 }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .post-tags li {
   padding: 6px;
+  margin-right: 8px;
+  color: lighten($color-dark, 20%);
 }
 
 .tag-size-1 {
-  font-size: 80%;
+  font-size: 100%;
 }
 
 .tag-size-2 {
-  font-size: 90%;
+  font-size: 120%;
 }
 
 .tag-size-3 {
-  font-size: 100%;
+  font-size: 140%;
+}
+.tag-size-4 {
+  font-size: 180%;
+}
+.tag-size-5 {
+  font-size: 200%;
 }
 
 .post-title {
@@ -155,6 +169,10 @@ body {
 .post {
   transform: scale(0.5);
 }
+.authors {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @media (min-width: 300px) and (max-width: 800px) {
   .wrapper {
@@ -162,8 +180,9 @@ body {
   }
   .tags {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+  }
+  .post-tags li {
+    padding: 6px;
   }
 }

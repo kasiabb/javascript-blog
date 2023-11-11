@@ -7,7 +7,7 @@ const templates = {
     document.querySelector('#template-author-link').innerHTML
   ),
   tagLink: Handlebars.compile(
-    document.querySelector('#template-tags-link').innerHTML
+    document.querySelector('#template-tag-link').innerHTML
   ),
   tagCloudLink: Handlebars.compile(
     document.querySelector('#template-tagcloud-link').innerHTML
@@ -242,7 +242,7 @@ function tagClickHandler(event) {
 
 function addClickListenersToTags() {
   /* find all links to tags */
-  const tags = document.querySelectorAll('.post-tags a');
+  const tags = document.querySelectorAll('a[href^="#tag-"]');
   /* START LOOP: for each link */
   for (let tag of tags) {
     tag.addEventListener('click', tagClickHandler);
@@ -253,7 +253,6 @@ function addClickListenersToTags() {
 }
 
 addClickListenersToTags();
-
 function generateAuthors() {
   /* [NEW] create a new variable allAuthors with an empty object */
   let allAuthorsList = {};
