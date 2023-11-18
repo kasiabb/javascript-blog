@@ -139,20 +139,25 @@ body {
 
 .tag-size-1 {
   font-size: 100%;
+  color: #fbc531;
 }
 
 .tag-size-2 {
   font-size: 120%;
+  color: #4cd137;
 }
 
 .tag-size-3 {
   font-size: 140%;
+  color: #9c88ff;
 }
 .tag-size-4 {
   font-size: 180%;
+  color: #8c7ae6;
 }
 .tag-size-5 {
   font-size: 200%;
+  color: #ff9ff3;
 }
 
 .post-title {
@@ -168,10 +173,6 @@ body {
 }
 .post {
   transform: scale(0.5);
-}
-.authors {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
